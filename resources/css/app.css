@@ -1,0 +1,109 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    /* font-family: "Madimi One", sans-serif; */
+    font-family: "Montserrat", sans-serif;
+}
+
+.remove-blu{
+    border:none!important;
+    outline: none!important;
+    box-shadow: none!important;
+}
+
+.remove-blu:focus{
+    border:none!important;
+    outline: none!important;
+    box-shadow: none!important;
+} 
+
+.main-color-1 {
+    color: rgb(0, 119, 130);
+}
+
+.main-color-2 {
+    color: #13c1ac;
+}
+
+.main-bg-color-1 {
+    background-color: rgb(0, 119, 130);
+}
+
+.main-bg-color-2 {
+    background-color: #13c1ac;
+}
+
+/* animations */
+
+.fade-left {
+    animation: fadeLeft 1s ease-in;
+}
+
+.fade-right {
+    animation: fadeRight 1s ease-in;
+}
+
+.zoom-in {
+    animation: zoomIn 1s ease-in;
+}
+
+.fade-top {
+    animation: fadeTop 1s ease-in;
+}
+
+@media screen and (min-width: 780px) {
+    #sideMenu:hover > ul > li > span {
+        transition: all;
+        transition-delay: 320ms;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeTop {
+    0% {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

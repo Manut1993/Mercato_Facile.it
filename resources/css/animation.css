@@ -1,0 +1,12 @@
+.fade-left{
+	animation: fadeLeft 300ms ease-in;
+}
+
+@keyframes fadeLeft {
+	0%{
+		transform: translateX(-50px);
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
